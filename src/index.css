@@ -14,8 +14,13 @@ code {
     monospace;
 }
 
+.generalDiv {
+  margin: 0px 20px;
+  text-align: center;
+}
+
 .ant-table table {
-  width: 50% !important;
+  width: 100% !important;
   text-align: left;
   border-radius: 2px 2px 0 0;
   border-collapse: separate;
@@ -25,6 +30,4 @@ code {
 .ant-table-container {
   border-top-left-radius: 2px;
   border-top-right-radius: 2px;
-  display: flex !important;
-  justify-content: center !important;
 }

@@ -9,7 +9,7 @@ const columns = [
     dataIndex: "name",
     sorter: true,
     render: (name) => `${name.first} ${name.last}`,
-    width: "20%",
+    width: "30%",
   },
   {
     title: "Gender",
@@ -18,7 +18,7 @@ const columns = [
       { text: "Male", value: "male" },
       { text: "Female", value: "female" },
     ],
-    width: "20%",
+    width: "30%",
   },
   {
     title: "Email",
@@ -37,7 +37,7 @@ class App extends React.Component {
     data: [],
     pagination: {
       current: 1,
-      pageSize: 7,
+      pageSize: 10,
     },
     loading: false,
   };
@@ -80,7 +80,7 @@ class App extends React.Component {
   render() {
     const { data, pagination, loading } = this.state;
     return (
-      <div style={{ margin: "0 20px", textAlign: "center" }}>
+      <div className="generalDiv">
         <h1>Shalom Project</h1>
         <Table
           columns={columns}
